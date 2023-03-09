@@ -1,0 +1,92 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+html,body{
+    font-family: -apple-system,"Helvetica Neue","Helvetica","Arial","PingFang SC","Hiragino Sans GB","STHeiti","Microsoft YaHei","Microsoft JhengHei",SimSun,sans-serif;
+    font-size: 14px;
+}
+
+body {
+	line-height: 1;
+}
+ol, ulm, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+    outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none;-webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color:transparent;outline:none}
+h3{font-size: 24px;}
+i{font-style: normal}
+img{max-width: 100%;border:0}
+
+input{-webkit-appearance: none;outline: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+.clear:after {content:'';display: table;clear: both;}
+
+.p-1 {overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.p-2 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space: normal}
+.p-3 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;white-space: normal}
+.p-4 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;white-space: normal}
+.p-5 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;white-space: normal}
+.p-6 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;white-space: normal}
+.p-7 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;white-space: normal}
+.p-8 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:8;white-space: normal}
+.p-9 {overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:9;white-space: normal}
+.p-10{overflow: hidden;display: -webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:10;white-space: normal}
+
+.w890,.w905,.w950,.w1120,.w1180,.w1189,.w1200,.w1268,.w1380,.w1400{width: 96%;margin:0 auto;position: relative}
+.w890{max-width: 890px;}
+.w905{max-width:905px;}
+.w950{max-width:950px;}
+.w1120{max-width: 1120px;}
+.w1180{max-width: 1180px;}
+.w1189{max-width:1189px;}
+.w1200{max-width: 1200px;}
+.w1268{max-width: 1268px}
+.w1380{max-width: 1380px;}
+.w1400{max-width: 1400px;}
