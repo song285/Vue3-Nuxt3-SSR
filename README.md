@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-### 第四步 打包-混合渲染模式 使用PM2启动 nginx做代理转发
+### 第四步 打包
 ```shell
 npm run build
 ```
