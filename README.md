@@ -22,7 +22,7 @@ npm run build
 
 ## 部署教程
 
-Nuxt的部署与vue有出入，主要有两种模式，npm run generate和npm run build
+Nuxt的部署与vue有出入，主要有两种模式，···npm run generate···和npm run build
 
 ### 方式
 
