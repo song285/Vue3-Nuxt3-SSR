@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { loadEnv } from 'vite'
+import https from 'node:https'
 const envName = loadEnv(process.argv[process.argv.length-1], './env').VITE_SERVER_NAME
 
 export default defineNuxtConfig({
@@ -9,10 +10,10 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       script: [
-        { src: 'http://xxx.js' }
+        // { src: 'http://xxx.js' }
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://awesome-lib.css' }
+        // { rel: 'stylesheet', href: 'https://awesome-lib.css' }
       ],
     }
   },

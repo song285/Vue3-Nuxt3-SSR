@@ -1,12 +1,12 @@
 import { defineStore } from 'pinia'
 
-const USER_INFO = {}
-
-export const useUserStore = defineStore('userInfo', () => {
-
-  const userInfo = reactive(USER_INFO)
-
-  return {
-    userInfo,
-  }
+// useStore 可以任意，比如 useUser, useCart
+// 参数1是整个应用中唯一的store id
+export const userStore = defineStore('user', {
+  state() {
+    return {
+      showLogin: false,
+      isLogin: false
+    }
+  },
 })
