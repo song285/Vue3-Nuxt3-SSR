@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-container">
     {{ url }}
     <el-button type="primary" @click="onClick">测试</el-button>
   </div>
@@ -18,3 +18,9 @@ import { demo1 } from "../utils/api"
     })
   }
 </script>
+
+<style scoped lang="scss">
+.page-container {
+  padding-top: 80px;
+}
+</style>
