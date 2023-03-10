@@ -22,33 +22,34 @@ npm run build
 
 ## 部署教程
 
-Nuxt的部署与vue有出入，主要有两种模式，```npm run generate```和npm run build
+Nuxt的部署与vue有出入，主要有两种模式，```npm run generate```和```npm run build```
 
 ### 方式
 
 ##### 一、generate模式
 这种模式打包的时候会生成对应的html文件，如果项目中数据涉及到后台接口，那么在打包的时候所有的数据都会注定，后续若接口数据发生改变，页面也不会再变了，适合一些静态站点的项目。
 
-使用generate打包跟之前vue一样，会生成一个dist文件夹，放到服务器即可
+使用```generate```打包跟之前vue一样，会生成一个```dist```文件夹，放到服务器即可
 
 ##### 二、build模式
-1.执行npm run build之后.nuxt文件夹里会生成一个dist文件夹
+1.执行```npm run build```之后```.nuxt```文件夹里会生成一个```dist```文件夹
 ```shell
 npm run build
 ```
 
-2.将.nuxt、static、package.json、 nuxt.config.js四个文件放入到服务器对应的目录里
-3.在服务器对应的目录安装项目依赖npm install
+2.将```.nuxt```、```static```、```package.json```、 ```nuxt.config.js```四个文件放入到服务器对应的目录里
+
+3.在服务器对应的目录安装项目依赖```npm install```
 ```shell
 npm install
 ```
 
-4.安装完依赖之后 执行npm start 启动项目
+4.安装完依赖之后 执行```npm start```启动项目
 ```shell
 npm start
 ```
 
-5. 此时项目在3000端口启动，还需要再配置一下nginx
+5. 此时项目在```3000```端口启动，还需要再配置一下```nginx```
 
 ```nginx
 // An highlighted block
@@ -61,13 +62,13 @@ npm start
     }
 ```
 
-6.配置完了重启nginx
+6.配置完了重启```nginx```
 ```shell
 nginx -s reload
 ```
 
 ### pm2 进程守护
-PM2 是具有内置负载均衡器的 Node.js 应用程序的生产流程管理器。它允许您使应用程序永远保持活动状态，在不停机的情况下重新加载它们，并促进常见的系统管理任务。详细介绍: https://www.npmjs.com/package/pm2
+```PM2``` 是具有内置负载均衡器的 ```Node.js``` 应用程序的生产流程管理器。它允许您使应用程序永远保持活动状态，在不停机的情况下重新加载它们，并促进常见的系统管理任务。详细介绍: https://www.npmjs.com/package/pm2
 
 1. 安装
 ```shell
